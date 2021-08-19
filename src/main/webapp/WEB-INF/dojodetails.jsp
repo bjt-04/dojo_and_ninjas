@@ -30,17 +30,17 @@
 			<table>
 				<thead>
 					<tr>
-						<th scope="col">First Name</th>
-				      	<th scope="col">Last Name</th>
-				      	<th scope="col">Age</th>
+						<th>First Name</th>
+				      	<th>Last Name</th>
+				      	<th>Age</th>
 					</tr>
 				</thead>
 				<tbody>
 					<c:forEach items="${ dojo.ninjas }" var="ninja">
 					<tr>
-					  	<td scope="row"><c:out value="${ ninja.firstName }"/></td>
-						<td scope="row"><c:out value="${ ninja.lastName }"/></td>
-					  	<td scope="row"><c:out value="${ ninja.age }"/></td>
+					  	<td><c:out value="${ ninja.firstName }"/></td>
+						<td><c:out value="${ ninja.lastName }"/></td>
+					  	<td><c:out value="${ ninja.age }"/></td>
 					</tr>
 					</c:forEach>
 				</tbody>
@@ -48,4 +48,4 @@
 		</div>
 	</div>
 </body>
-<html>
+</html>

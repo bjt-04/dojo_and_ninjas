@@ -28,9 +28,9 @@
 		<div>
 	    	<form:form action="/dojos/create" method="POST" modelAttribute="dojo">
 	           <div>
-	               <form:label path="name" class="col-2">name</form:label>
-	               <form:input path="name" class="col-3" type="text"/>
-	               <form:errors path="name" class="col-2 text-danger"/>
+	               <form:label path="name">name</form:label>
+	               <form:input path="name" type="text"/>
+	               <form:errors path="name"/>
 	           </div>
 	           <div>
 	           		<div>
@@ -41,4 +41,4 @@
 		</div>
 	</div>
 </body>
-<html>
+</html>

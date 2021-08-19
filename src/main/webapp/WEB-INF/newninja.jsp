@@ -27,28 +27,28 @@
 		</div>
 		<div>
 	    	<form:form action="/ninjas/create" method="POST" modelAttribute="ninja">
-	    	   <div class="row my-2">
-	    	   <form:label path="dojo" class="col-2">Dojos:</form:label>
-	    	   <form:select path="dojo" class="col-5" type="text">
+	    	   <div>
+	    	   <form:label path="dojo">Dojos:</form:label>
+	    	   <form:select path="dojo" type="text">
 	    	   <c:forEach items="${ dojos }" var="dojo">
 	    	   		<form:option value="${ dojo.id }"><c:out value="${ dojo.name }"/></form:option>
 	    	   </c:forEach>
 	    	   </form:select>
 	    	   </div>
 	           <div>
-	               <form:label path="firstName" class="col-2">First Name:</form:label>
-	               <form:input path="firstName" class="col-5" type="text"/>
-	               <form:errors path="firstName" class="col-2 text-danger"/>
+	               <form:label path="firstName">First Name:</form:label>
+	               <form:input path="firstName" type="text"/>
+	               <form:errors path="firstName"/>
 	           </div>
 	           <div>
-	               <form:label path="lastName" class="col-2">Last Name:</form:label>
-	               <form:input path="lastName" class="col-5" type="text" name="lastName"/>
-	               <form:errors path="lastName" class="col-2 text-danger"/>
+	               <form:label path="lastName">Last Name:</form:label>
+	               <form:input path="lastName" type="text" name="lastName"/>
+	               <form:errors path="lastName"/>
 	           </div>
 	           <div>
-	               <form:label path="age" class="col-2">Age:</form:label>
-	               <form:input path="age" class="col-5" type="number" name="age" min="10"/>
-	               <form:errors path="age" class="col-2 text-danger"/>
+	               <form:label path="age">Age:</form:label>
+	               <form:input path="age" type="number" name="age" min="10"/>
+	               <form:errors path="age"/>
 	           </div>
 	           <div>
 	           		<div>
@@ -59,4 +59,4 @@
 		</div>
 	</div>
 </body>
-<html>
+</html>
